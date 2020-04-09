@@ -9,6 +9,11 @@
   "keywords": [],
   "author": "Matthew Hemingway",
   "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "immutable": "^4.0.0-rc.12",
+    "immer": "^6.0.3"
+  },
   "devDependencies": {
     "webpack": "4.41.6",
     "webpack-cli": "3.3.11",
