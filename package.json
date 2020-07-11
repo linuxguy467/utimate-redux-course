@@ -1,7 +1,7 @@
 {
   "name": "redux-course",
   "version": "1.0.0",
-  "description": "Redux Starter Project",
+  "description": "Redux Bug Report App",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js"
@@ -12,7 +12,8 @@
   "dependencies": {
     "immer": "^6.0.3",
     "immutable": "^4.0.0-rc.12",
-    "lodash": "~4.17.19"
+    "lodash": "~4.17.19",
+    "redux": "~4.0.5"
   },
   "devDependencies": {
     "webpack": "~4.43.0",
