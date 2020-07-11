@@ -1,4 +1,4 @@
-import { bugAdded } from './actions';
+import { bugAdded, bugResolved } from './actions';
 import store from './store';
 
 // state = reducer(state, action);
@@ -9,6 +9,7 @@ import store from './store';
 // });
 
 store.dispatch(bugAdded('Bug 1'));
+store.dispatch(bugResolved(1));
 
 // unsubscribe();
 
