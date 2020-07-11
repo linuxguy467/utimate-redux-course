@@ -10,8 +10,8 @@
   "author": "Matthew Hemingway",
   "license": "ISC",
   "dependencies": {
-    "immer": "^6.0.3",
-    "immutable": "^4.0.0-rc.12",
+    "immer": "~6.0.3",
+    "immutable": "~4.0.0-rc.12",
     "lodash": "~4.17.19",
     "redux": "~4.0.5"
   },
