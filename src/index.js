@@ -1,4 +1,4 @@
-import * as actions from './store/bugs';
+import { bugAdded, bugResolved, getUnresolvedBugs } from './store/bugs';
 import configureStore from './store/configureStore';
 import { projectAdded } from './store/projects';
 
@@ -9,9 +9,12 @@ store.subscribe(() => {
 });
 
 store.dispatch(projectAdded({ name: 'Project 1' }));
+store.dispatch(bugAdded({ description: 'Bug 1' }));
+store.dispatch(bugAdded({ description: 'Bug 2' }));
+store.dispatch(bugAdded({ description: 'Bug 3' }));
+store.dispatch(bugResolved({ id: 1 }));
 
-store.dispatch(actions.bugAdded({ description: 'Bug 1' }));
-store.dispatch(actions.bugAdded({ description: 'Bug 2' }));
-store.dispatch(actions.bugRemoved({ id: 2 }));
-store.dispatch(actions.bugAdded({ description: 'Bug 3' }));
-store.dispatch(actions.bugResolved({ id: 1 }));
+const unresolvedBugs = getUnresolvedBugs(store.getState());
+const unresolvedBugs2 = getUnresolvedBugs(store.getState());
+
+console.log(unresolvedBugs === unresolvedBugs2);
