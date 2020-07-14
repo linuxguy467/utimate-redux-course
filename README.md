@@ -1,10 +1,10 @@
 # Ultimate Redux Course
 
-This code is from the course [The Ultimate Redux Course](https://codewithmosh.com/courses/enrolled/783424) by Mosh Hamedani @ [Code With Mosh](https://codewithmosh.com/)
+This code is from the course [The Ultimate Redux Course](https://codewithmosh.com/courses/enrolled/783424) by [Mosh Hamedani](https://twitter.com/moshhamedani) @ [Code With Mosh](https://codewithmosh.com/)
 
 ## Run the programs
 
-Install Node.js which installs npm for you. Once installed open code in your favorite code editor such as Atom, Visual Studio Code or even an IDE such as WebStorm.
+Install Node.js and npm. Once installed open code in your favorite code editor such as Atom, Visual Studio Code or even an IDE such as WebStorm and run `npm i` to install dependencies.
 
 ### Run the dev server
 
@@ -16,8 +16,10 @@ Direct the terminal to the `src/functional` sub-folder and run `node {FILE_TO_RU
 
 ## Folders
 
-Here's a description of the source code included.
+Here's a description of the project code included.
 
-- **bugs-backend**: A basic Node.js back-end for the bug tracker app.
-- **bugs-frontend**: The completed React/Redux front-end for the bug tracker app.
-- **functional**: sample JS files to demonstrate functional programming concepts.
+- **server**: Node.js back-end for the bug tracker app.
+- **src**: completed React/Redux front-end for bug tracker app.
+- **src/store**: completed redux store for the bug tracker app.
+- **src/store/middleware**: redux store middleware for bug tacker app.
+- **src/functional**: sample JS files to demonstrate functional programming concepts.
